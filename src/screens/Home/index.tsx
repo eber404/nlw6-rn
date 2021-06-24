@@ -49,7 +49,6 @@ export function Home() {
     categoryId === category ? setCategory('') : setCategory(categoryId)
   }
 
-
   function handleAppointmentDetails() {
     navigation.navigate("AppointmentDetails")
   }
@@ -69,21 +68,19 @@ export function Home() {
         categorySelected={category}
         setCategory={handleCategorySelect}
       />
-
-      <View style={styles.content}>
-        <ListHeader
-          title="Partidas agendadas"
-          subtitle="Total 6"
-        />
-        <FlatList
-          style={styles.matches}
-          data={appointments}
-          keyExtractor={item => item.id}
-          renderItem={(({ item }) => <Appointment data={item} onPress={handleAppointmentDetails} />)}
-          showsVerticalScrollIndicator={false}
-          ItemSeparatorComponent={() => <ListDivider />}
-        />
-      </View>
+      <ListHeader
+        title="Partidas agendadas"
+        subtitle="Total 6"
+      />
+      <FlatList
+        style={styles.matches}
+        contentContainerStyle={{ paddingBottom: 69, }}
+        data={appointments}
+        keyExtractor={item => item.id}
+        renderItem={(({ item }) => <Appointment data={item} onPress={handleAppointmentDetails} />)}
+        showsVerticalScrollIndicator={false}
+        ItemSeparatorComponent={() => <ListDivider />}
+      />
     </Background>
   )
 }

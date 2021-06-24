@@ -30,7 +30,7 @@ export function Header(props: Props) {
 
       <Text style={styles.title}>{props.title}</Text>
 
-      {props.action && <View>{props.action}</View>}
+      {props.action ? <View>{props.action}</View> : <View style={{ width: 24 }} />}
     </LinearGradient>
   )
 }
