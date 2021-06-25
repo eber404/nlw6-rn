@@ -4,7 +4,7 @@ import { View, Text, Image, Alert, ActivityIndicator } from 'react-native'
 import IllustrationImg from '../../assets/illustration.png'
 import { styles } from './styles'
 
-import { useAuth } from '../../hooks/auth'
+import { useAuth } from '../../hooks/useAuth'
 
 import { ButtonIcon } from '../../components/ButtonIcon'
 import { Background } from '../../components/Background'

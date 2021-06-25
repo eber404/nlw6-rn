@@ -6,7 +6,7 @@ import AppLoading from 'expo-app-loading'
 
 import { Background } from './src/components/Background'
 
-import { AuthProvider } from './src/hooks/auth'
+import { AuthProvider } from './src/hooks/useAuth'
 
 import { Routes } from './src/routes/'
 import { StatusBar, LogBox } from 'react-native'
