@@ -1,1 +1,1 @@
-# nlw6-rn
+a mobile app to schedule online game matches with your friends
